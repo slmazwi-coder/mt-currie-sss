@@ -14,7 +14,7 @@ export const Footer = () => {
               <img
                 src="/assets/logo/mclogo.png"
                 alt="Mount Currie SSS Logo"
-                className="h-12 w-12 shrink-0 rounded-xl border border-white/20 shadow-lg object-contain bg-white"
+                className="h-12 w-12 shrink-0 rounded-xl border border-white/20 shadow-lg object-contain bg-school-blue"
               />
               <div>
                 <h3 className="text-base font-bold leading-tight">Mount Currie Senior Secondary School</h3>
