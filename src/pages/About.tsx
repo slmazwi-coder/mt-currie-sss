@@ -35,13 +35,14 @@ export const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: 0.05 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden shadow-2xl border-4 border-[#eef0f7] h-[280px] sm:h-[360px]"
+            className="rounded-2xl overflow-hidden shadow-2xl border-4 h-[280px] sm:h-[360px] bg-[#f0f6fa]"
+            style={{ borderColor: '#C9A84C' }}
           >
             {!campusFailed ? (
               <img
                 src="/assets/about/mccamups.png"
                 alt="Mount Currie SSS campus"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 onError={() => setCampusFailed(true)}
               />
             ) : (
@@ -74,10 +75,8 @@ export const About = () => {
           <div className="bg-[#f0f6fa] rounded-3xl overflow-hidden shadow-lg border border-[#d6e5ef]">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="flex flex-col items-center justify-center bg-school-blue p-8 md:p-10">
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5" style={{ borderColor: '#C9A84C' }}>
-                  <div className="w-full h-full flex items-center justify-center bg-[#133d58]">
-                    <img src="/assets/about/principal.jpg" alt="Mr. Solomon" className="w-full h-full object-cover object-top" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
-                  </div>
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 shadow-xl mb-5 flex items-center justify-center bg-[#133d58]" style={{ borderColor: '#C9A84C' }}>
+                  <span className="text-5xl md:text-6xl font-bold font-serif text-white/60">MS</span>
                 </div>
                 <h3 className="text-lg font-bold text-white text-center leading-tight">Mr. Solomon</h3>
                 <p className="text-sm font-semibold mt-1 text-center" style={{ color: '#C9A84C' }}>Principal</p>
